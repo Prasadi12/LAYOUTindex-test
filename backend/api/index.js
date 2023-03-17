@@ -31,7 +31,7 @@ app.use("/api/v1.0/Device", devicesRoute);
 
 
 
-app.listen(8000, ()=>{
+app.listen(8080, ()=>{
     connect()
     console.log("Connected to backend.")
 });
