@@ -1,7 +1,10 @@
 import React from 'react'
-import LeftPane from '../../components/LeftPane/LeftPane'
-import NavBar from '../../components/Navigation/NavBar'
-import ViewRightPane from '../../components/ViewRightPane/ViewRightPnae'
+import './ViewLocations.css'
+import LeftPane from '../../../components/LeftPane/LeftPane'
+import NavBar from '../../../components/Navigation/NavBar'
+import ViewRightPane from '../../../components/ViewRightPane/ViewRightPane'
+
+
 
 export default function ViewLocations() {
   return (

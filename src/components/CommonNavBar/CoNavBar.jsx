@@ -6,15 +6,15 @@ export default function CoNavBar() {
     <div className="navBarBox">
         
         <div className="navBarLeft">
-            <span className='logo'>LMS</span>
+            <center><span className='logo'>Location Management System</span></center>
         </div>
 
-        <div className="navBarRight">
+        {/* <div className="navBarRight">
             <div className="navBarLinks">
                 <span className="navBarLink">HomePage</span>
                 <span className="navBarLink">Login</span>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }
