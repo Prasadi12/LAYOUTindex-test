@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AddDevices from "./pages/Devices/AddDevices/AddDevices";
 import DeleteDevices from "./pages/Devices/DeleteDevices/DeleteDevices";
 import ViewDevices from "./pages/Devices/ViewDevices/ViewDevices";
@@ -9,15 +10,26 @@ import ViewLocations from "./pages/Locations/ViewLocations/ViewLocations";
 
 function App() {
   return (
-    <div className="App">
-      {/* <AddLocations/> */}
-      {/* <ViewLocations/> */}
-      {/* <EditLocations/> */}
-      {/* <DeleteLocations/> */}
-      {/* <AddDevices/> */}
-      {/* <DeleteDevices/> */}
-      <ViewDevices/>
-    </div>
+    // <div className="App">
+    //   {/* <AddLocations/> */}
+    //   {/* <ViewLocations/> */}
+    //   {/* <EditLocations/> */}
+    //   {/* <DeleteLocations/> */}
+    //   {/* <AddDevices/> */}
+    //   {/* <DeleteDevices/> */}
+    //   <ViewDevices/>
+    // </div>
+    <Router>
+      <Routes>
+        <Route path="/addlocations" element={<ViewLocations />} />
+        <Route path="/" element={<AddLocations />} />
+        <Route path="/adddevices" element={<AddDevices />} />
+        <Route path="/editlocations" element={<EditLocations />} />
+        <Route path="/viewdevices" element={<ViewDevices />} />
+        <Route path="/deletelocations" element={<DeleteLocations />} />
+        <Route path="/deletedevices" element={<DeleteDevices />} />
+      </Routes>
+    </Router>
   );
 }
 
