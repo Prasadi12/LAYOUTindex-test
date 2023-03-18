@@ -4,6 +4,7 @@ import AddLocationIcon from '@mui/icons-material/AddLocation';
 import EditLocationAltIcon from '@mui/icons-material/EditLocationAlt';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { Link } from 'react-router-dom';
 
 export default function LeftPane() {
   return (
@@ -11,20 +12,28 @@ export default function LeftPane() {
     <div className="leftPaneContainer">
       <div className="list">
         <li className="listItem">
+          <Link to="/AddLocations" className='link'>
           <AddLocationIcon className='addLocationIcon'/>
           <span className="listItemName">Add Locations</span>
+          </Link>
         </li>
         <li className="listItem">
+          <Link to="/ViewLocations">
           <LocationOnIcon className='locationOnIcon'/>
-          <span className="listItemName">Veiw Locations</span>
+          <span className="listItemName">View Locations</span>
+          </Link>
         </li>
         <li className="listItem">
+          <Link to="/EditLocations">
           <EditLocationAltIcon className='editLocationAltIcon'/>
           <span className="listItemName">Edit Locations</span>
+          </Link>
         </li>
         <li className="listItem">
+          <Link to="/DeleteLocations">
           <DeleteForeverIcon className='deleteForeverIcon'/>
           <span className="listItemName">Delete Locations</span>
+          </Link>
         </li>
         <hr/>
         <div className='post'>

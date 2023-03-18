@@ -1,8 +1,10 @@
 // import React from 'react'
 import React, { useState } from 'react';
-import './RightPane.css'
+import './ELocation.css'
 
-export default function RightPane() {
+
+
+export default function ELocation() {
 
   const [name, setName] = useState('');
   const [address, setAddress] = useState('');
@@ -42,7 +44,7 @@ export default function RightPane() {
         <div className="form">
         <nav class="bg-dark navbar-dark navbar">
             <div className="row col-12 d-flex justify-content-center text-white">
-                <h3>Register Locations</h3>
+                <h3>Edit Locations</h3>
             </div>
         </nav>
 
@@ -78,7 +80,7 @@ export default function RightPane() {
               </div>
           
           <div class="footer">
-              <button type="submit" class="btn" onSubmit={handleSubmit}>Register</button>
+              <button type="submit" class="btn" onSubmit={handleSubmit}>Update</button>
           </div>
           </div>
           </form>
@@ -87,3 +89,4 @@ export default function RightPane() {
     </div>
   )
 }
+

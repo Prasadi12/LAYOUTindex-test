@@ -21,8 +21,8 @@ function App() {
     // </div>
     <Router>
       <Routes>
-        <Route path="/addlocations" element={<ViewLocations />} />
-        <Route path="/" element={<AddLocations />} />
+        <Route path="/" element={<ViewLocations />} />
+        <Route path="/addlocations" element={<AddLocations />} />
         <Route path="/adddevices" element={<AddDevices />} />
         <Route path="/editlocations" element={<EditLocations />} />
         <Route path="/viewdevices" element={<ViewDevices />} />

@@ -14,7 +14,7 @@ const LocationSchema = new mongoose.Schema({
         type: String,
         required: false,
     },
-    no_devices:{
+    nodevices:{
         type: String,
         required: false,
     }

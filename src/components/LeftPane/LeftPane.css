@@ -7,6 +7,10 @@
     height: calc(100vh - 50px);
 }
 
+.link{
+    text-decoration: none;
+}
+
 ::-webkit-scrollbar{
     width: 5px;
 }
@@ -58,6 +62,7 @@
 .listItemName{
     /* margin-left: 50px; */
     font-size: 20px;
+    text-decoration: none;
 }
 
 .post{
