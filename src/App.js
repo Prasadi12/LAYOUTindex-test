@@ -17,8 +17,9 @@ function App() {
     //   {/* <DeleteLocations/> */}
     //   {/* <AddDevices/> */}
     //   {/* <DeleteDevices/> */}
-    //   <ViewDevices/>
+    // {/* <ViewDevices/> */}
     // </div>
+
     <Router>
       <Routes>
         <Route path="/" element={<ViewLocations />} />

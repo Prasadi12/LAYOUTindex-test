@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import "./NavBar.css" 
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
@@ -19,7 +20,9 @@ export default function NavBar() {
 
         <div className="navBarRight">
             <div className="navBarLinks">
+                <Link to='ViewDevices'>
                 <span className="navBarLink">HomePage</span>
+                </Link>
                 <span className="navBarLink">Login</span>
             </div>
         </div>
